@@ -21,7 +21,7 @@ export function Sidebar() {
   }
   return (
     <Sheet open={openSheet} onOpenChange={setOpenSheet}>
-      <SheetTrigger asChild>
+      <SheetTrigger asChild className="">
         <button>
           <AlignJustify className="size-6 stroke-white" />
         </button>

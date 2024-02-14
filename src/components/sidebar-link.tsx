@@ -27,7 +27,7 @@ export function BackToTop() {
   return (
     <AnchorLink
       offset={70}
-      href="#call"
+      href="#header"
       className="flex items-center gap-2 rounded-md p-3 text-blue-text transition-colors hover:animate-bounce md:p-0"
     >
       <ArrowUpCircle className="size-9 fill-blue-light-background" />
