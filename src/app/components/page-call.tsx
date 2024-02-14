@@ -13,7 +13,7 @@ export function Call() {
         </h1>
         <p className="mt-5 text-balance text-center">
           Descubra o poder da empatia e da transformação profunda. Permita-se
-          conhecer melhor e viver uma vida mais autêntica. Agende sua sessão de
+          conhecer melhor e viver uma vida mais abutêntica. Agende sua sessão de
           terapia online agora e inicie sua jornada de transformação
           significativa
         </p>

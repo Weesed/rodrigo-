@@ -26,7 +26,7 @@ export default function RootLayout({
           <div className="fixed bottom-10 right-6 z-50 flex flex-col items-center gap-5 md:left-0 md:mx-auto md:w-[1280px] md:items-end md:pr-4">
             <Link
               target="_blank"
-              href="https://api.whatsapp.com/send/?phone=5519993391856&text=Ola Dr. Rodrigo! Tenho interesse em iniciar a psicanálise!"
+              href="https://api.whatsapp.com/send/?phone=5513997677528&text=Ola Rodrigo! Tenho interesse em iniciar a psicanálise!"
               className="hover:animate-dance"
             >
               <Whatsapp />

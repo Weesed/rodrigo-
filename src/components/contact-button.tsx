@@ -8,7 +8,7 @@ export function ContactButton() {
 
   function handleContact() {
     router.push(
-      'https://api.whatsapp.com/send/?phone=5519993391856&text=Ola Dr. Rodrigo! Tenho interesse em iniciar a psicanálise!',
+      'https://api.whatsapp.com/send/?phone=5513997677528&text=Ola Rodrigo! Tenho interesse em iniciar a psicanálise!',
     )
   }
 
