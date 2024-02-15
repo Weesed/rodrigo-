@@ -7,13 +7,15 @@ import { Psicanalise } from './components/page-psicanalise'
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col ">
       <Call />
-      <Psicanalise />
-      <About />
-      <Depoimentos />
-      <Palestras />
-      <Faq />
+      <div className="container px-0">
+        <Psicanalise />
+        <About />
+        <Depoimentos />
+        <Palestras />
+        <Faq />
+      </div>
     </main>
   )
 }

@@ -4,7 +4,7 @@ import { BookOpen, HandHeart, Search } from 'lucide-react'
 
 export function Psicanalise() {
   return (
-    <div id="psicanalise" className="mx-auto mt-16 px-5">
+    <div id="psicanalise" className="mx-5 mt-40 md:mx-0">
       <Title>Como a psicanálise ajuda?</Title>
       <div className="mt-[30px] flex flex-col gap-5">
         <Card
