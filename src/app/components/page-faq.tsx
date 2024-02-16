@@ -34,7 +34,13 @@ export function Faq() {
           className="rounded-lg border border-blue-text/20 bg-blue-light-background px-5"
         >
           <AccordionTrigger>Como funciona a terapia online?</AccordionTrigger>
-          <AccordionContent>teste</AccordionContent>
+          <AccordionContent>
+            Na terapia online, nos encontramos virtualmente por meio de
+            videochamadas seguras. Você compartilha suas preocupações, e juntos
+            exploramos soluções e estratégias para melhorar sua saúde mental. É
+            conveniente, acessível e eficaz, proporcionando apoio onde quer que
+            você esteja.
+          </AccordionContent>
         </AccordionItem>
 
         <AccordionItem
@@ -42,17 +48,14 @@ export function Faq() {
           className="rounded-lg border border-blue-text/20 bg-blue-light-background px-5"
         >
           <AccordionTrigger>Terapia Online funciona?</AccordionTrigger>
-          <AccordionContent>teste</AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem
-          value="item-4"
-          className="rounded-lg border border-blue-text/20 bg-blue-light-background px-5"
-        >
-          <AccordionTrigger>
-            Posso remarcar as minhas consultas?
-          </AccordionTrigger>
-          <AccordionContent>teste</AccordionContent>
+          <AccordionContent>
+            Sim, a terapia online é eficaz para muitas pessoas. Oferece
+            conveniência, acesso mais amplo a profissionais de saúde mental e
+            permite que as pessoas recebam apoio no conforto de seus ambientes
+            familiares. No entanto, a eficácia pode variar de pessoa para
+            pessoa, sendo importante encontrar um terapeuta adequado e criar uma
+            conexão significativa durante as sessões virtuais.
+          </AccordionContent>
         </AccordionItem>
       </Accordion>
     </div>

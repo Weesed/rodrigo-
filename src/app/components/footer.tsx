@@ -110,7 +110,7 @@ export function Footer() {
 
             <FormField
               name="contact"
-              render={({ field }) => (
+              render={() => (
                 <FormItem>
                   <FormLabel className="text-white">
                     Seu e-mail ou telefone
@@ -125,7 +125,7 @@ export function Footer() {
 
             <FormField
               name="message"
-              render={({ field }) => (
+              render={() => (
                 <FormItem>
                   <FormLabel className="text-white">
                     Seu e-mail ou telefone
