@@ -11,7 +11,7 @@ export function Card({ icon, title, children }: CardProps) {
     <div className="text-pretty rounded-md bg-blue-light-background p-5 md:p-10">
       {icon && (
         <div className="mb-4 flex items-center gap-1">
-          <div className="rounded-md bg-blue-background p-1">{icon}</div>
+          <div className="rounded-md bg-blue-green-background p-1">{icon}</div>
           <h3 className="font-semibold">{title}</h3>
         </div>
       )}

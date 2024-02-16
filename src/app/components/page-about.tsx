@@ -40,7 +40,7 @@ export function About() {
               alt="Rodrigo's photo"
               width="590"
               height="940"
-              className="-mb-[20px] ml-12 max-h-[927px] max-w-[350px] md:row-span-full md:ml-auto md:max-h-[740px] md:max-w-[450px]"
+              className="-mb-[20px] max-h-[927px] max-w-[350px] md:row-span-full md:ml-12 md:ml-auto md:max-h-[740px] md:max-w-[450px]"
               quality={100}
             />
           </div>

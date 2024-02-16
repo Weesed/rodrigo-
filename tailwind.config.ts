@@ -21,8 +21,10 @@ const config = {
       colors: {
         'blue-text': '#126593',
         text: '#111111',
-        'blue-background': '#556688',
+        // 'blue-background': '#556688',
         'blue-light-background': '#F0F3F8',
+        'blue-background': '#142434',
+        'blue-green-background': '#04CBC4',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

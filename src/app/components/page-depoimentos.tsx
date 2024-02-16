@@ -7,20 +7,26 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import images from '@/utils/images.json'
 import Image from 'next/image'
+import { useMediaQuery } from 'react-responsive'
 
 export function Depoimentos() {
+  const isMobile = useMediaQuery({ query: '(max-width: 640px)' })
+  const slidesQtd = isMobile ? 1 : 3
+
   return (
     <div id="depoimentos" className="mt-16 px-5">
       <Title>Depoimentos de pacientes</Title>
       <div className="mt-[30px] overflow-x-scroll rounded-md bg-blue-light-background p-5">
         <Swiper
           pagination={true}
-          slidesPerView={1}
+          slidesPerView={slidesQtd}
+          spaceBetween={50}
           modules={[Pagination]}
+          loop={true}
           className="h-[280px]"
         >
           {images.images.map((img, i) => (
-            <SwiperSlide key={i} className="w-full">
+            <SwiperSlide key={i} className="w-full cursor-pointer select-none">
               <div className="">
                 <Image
                   src={img.src}

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { Whatsapp } from '@/assets/whatsapp'
 import { BackToTop } from '@/components/sidebar-link'
 import { Footer } from './components/footer'
+import { Toaster } from '@/components/ui/sonner'
 
 const openSans = OpenSans({ subsets: ['latin'] })
 
@@ -38,6 +39,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </div>
+        <Toaster richColors />
       </body>
     </html>
   )

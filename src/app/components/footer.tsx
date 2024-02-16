@@ -18,6 +18,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { useRouter } from 'next/navigation'
+import emailjs from '@emailjs/browser'
+import { toast } from 'sonner'
 
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'Por favor, informe seu nome completo' }),
@@ -39,7 +41,8 @@ export function Footer() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    reset,
+    formState: { isSubmitting },
   } = form
 
   function handleNewContact(data: ContactFormData) {
@@ -48,10 +51,34 @@ export function Footer() {
       router.push(
         `https://api.whatsapp.com/send/?phone=5513997677528&text=${message}`,
       )
-    }
+    } else {
+      const templateParams = {
+        from_name: data.name,
+        message: data.message,
+        contact: data.contact,
+      }
 
-    console.log(submitType)
-    console.log(data)
+      emailjs
+        .send(
+          'service_5p2kdxo',
+          'template_s3rpnn8',
+          templateParams,
+          'Us2f6a5KeA91DqVI0',
+        )
+        .then(
+          () => {
+            toast.success(
+              'Sua mensagem foi enviada com sucesso! Entrarei em contato o quanto antes!',
+            )
+          },
+          () => {
+            toast.error(
+              'Houve um erro com o envio do seu email, tente novamente por favor.',
+            )
+          },
+        )
+    }
+    reset()
   }
 
   return (
@@ -70,11 +97,11 @@ export function Footer() {
           >
             <FormField
               name="name"
-              render={({ field }) => (
+              render={() => (
                 <FormItem>
                   <FormLabel className="text-white">Seu nome</FormLabel>
                   <FormControl>
-                    <Input {...field} {...register('name')} />
+                    <Input {...register('name')} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -89,7 +116,7 @@ export function Footer() {
                     Seu e-mail ou telefone
                   </FormLabel>
                   <FormControl>
-                    <Input {...field} {...register('contact')} />
+                    <Input {...register('contact')} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -107,7 +134,6 @@ export function Footer() {
                     <Textarea
                       placeholder="Escreva um resumo do que você está sentindo"
                       className="resize-none"
-                      {...field}
                       {...register('message')}
                     />
                   </FormControl>
@@ -118,17 +144,19 @@ export function Footer() {
             <div className="flex justify-between">
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 onClick={() => {
                   setSubmitType('email')
                 }}
                 className="flex gap-2 bg-white font-semibold text-black hover:bg-white/70"
               >
                 <Mail className="size-4" />
-                Enviar e-mail
+                {isSubmitting ? 'Enviando...' : 'Enviar e-mail'}
               </Button>
 
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 onClick={() => {
                   setSubmitType('whatsapp')
                 }}

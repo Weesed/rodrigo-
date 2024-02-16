@@ -15,7 +15,7 @@ export function ContactButton() {
   return (
     <Button
       onClick={handleContact}
-      className="mb-40 mt-10 w-full max-w-[350px] animate-bounce rounded-full bg-blue-background py-7 font-bold uppercase hover:bg-blue-background/80"
+      className="mb-40 mt-10 w-full max-w-[350px] animate-bounce rounded-full bg-blue-green-background py-7 font-bold uppercase hover:bg-blue-green-background/80"
     >
       Agendar atendimento
     </Button>
