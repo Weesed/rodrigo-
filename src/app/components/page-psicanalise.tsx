@@ -5,8 +5,8 @@ import { BookOpen, HandHeart, Search } from 'lucide-react'
 export function Psicanalise() {
   return (
     <div id="psicanalise" className="mx-5 mt-40 md:mx-0">
-      <Title>Como a psicanálise ajuda?</Title>
-      <div className="mt-[30px] flex flex-col gap-5">
+      <Title>Como a psicanálise te ajuda?</Title>
+      <div className="mt-[30px] flex flex-col gap-5 md:flex-row">
         <Card
           title="O detetive da mente"
           icon={<Search className="size-5 stroke-white" />}

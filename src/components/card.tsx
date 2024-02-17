@@ -15,7 +15,7 @@ export function Card({ icon, title, children }: CardProps) {
           <h3 className="font-semibold">{title}</h3>
         </div>
       )}
-      {children}
+      <div className="flex h-full flex-col justify-between">{children}</div>
     </div>
   )
 }

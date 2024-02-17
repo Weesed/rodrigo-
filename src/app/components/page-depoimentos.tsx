@@ -14,7 +14,7 @@ export function Depoimentos() {
   const slidesQtd = isMobile ? 1 : 3
 
   return (
-    <div id="depoimentos" className="mt-16 px-5">
+    <div id="depoimentos" className="mt-40 px-5 md:px-0">
       <Title>Depoimentos de pacientes</Title>
       <div className="mt-[30px] overflow-x-scroll rounded-md bg-blue-light-background p-5">
         <Swiper
@@ -40,6 +40,13 @@ export function Depoimentos() {
           ))}
         </Swiper>
       </div>
+      <a
+        href="https://maps.app.goo.gl/91Vqwqp4QE9vVfkb8"
+        target="_blank"
+        className="mt-2 block text-center text-sm font-semibold transition-colors hover:text-blue-green-background"
+      >
+        Ver todos os depoimentos
+      </a>
     </div>
   )
 }

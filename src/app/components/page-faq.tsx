@@ -16,20 +16,6 @@ export function Faq() {
         className="mt-[30px] flex w-full flex-col gap-4"
       >
         <AccordionItem
-          value="item-1"
-          className="rounded-lg border border-blue-text/20 bg-blue-light-background px-5"
-        >
-          <AccordionTrigger>Terapia Online funciona?</AccordionTrigger>
-          <AccordionContent>
-            As pesquisas mais recentes mostram que 85% das pessoas preferem a
-            terapia online ou a acham tão boa quanto a presencial. Segundo o
-            Conselho Federal de Psicologia, o acompanhamento online possui a
-            mesma eficácia do acompanhamento presencial, além de ser mais em
-            conta e não exigir deslocamentos.
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem
           value="item-2"
           className="rounded-lg border border-blue-text/20 bg-blue-light-background px-5"
         >
