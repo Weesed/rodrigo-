@@ -14,9 +14,10 @@ export function About() {
     <div id="about" className="mx-5 mt-40 md:mx-0">
       <Title>Sobre mim</Title>
       <div className="mt-[30px]">
-        <Card>
-          <div className="flex flex-col gap-10 md:flex-row md:gap-0">
-            <div className="flex flex-col items-center gap-5 md:w-[60%] md:items-start md:gap-0">
+        <Card padding={0}>
+          <div className="flex flex-col gap-10 md:flex-row md:gap-2">
+            <div className="flex flex-1 flex-col items-center gap-10 p-5">
+              {/* text */}
               <div className="">
                 Olá! Meu nome é{' '}
                 <span className="font-semibold text-blue-text">
@@ -39,11 +40,13 @@ export function About() {
                 <span className="font-semibold">Agende sua consulta!</span>
               </div>
 
-              <div className="mt-10 flex w-[500px] flex-col gap-5">
+              {/* exp */}
+              <div className="flex flex-col gap-5">
                 <h2 className="text-center text-xl font-semibold">
                   Experiências
                 </h2>
-                <div className="grid w-fit grid-cols-2 items-center gap-16 gap-y-20 text-center text-blue-text md:col-start-1 md:row-start-2 md:gap-x-32">
+
+                <div className=" grid w-fit grid-cols-2 items-center gap-16 gap-y-20 text-center text-blue-text md:col-start-1 md:row-start-2 md:gap-x-32">
                   <div className="flex flex-col items-start">
                     <div className="flex items-center gap-1">
                       <Image
@@ -114,7 +117,8 @@ export function About() {
                 </div>
               </div>
 
-              <div className="mt-10 flex flex-col gap-5">
+              {/* certificate */}
+              <div className="flex flex-col gap-5">
                 <h2 className="text-center text-xl font-semibold">Premiação</h2>
                 <Image
                   src={certificate}
@@ -124,19 +128,22 @@ export function About() {
                 />
               </div>
 
-              <div className="flex h-24 w-full md:mt-20 md:w-[500px]">
+              {/* action button */}
+              <div className="h-24 w-full">
                 <ContactButton />
               </div>
             </div>
 
-            <Image
-              src={photo}
-              alt="Rodrigo's photo"
-              width="590"
-              height="940"
-              className="relative -mb-[20px] max-h-[927px] max-w-[350px] md:top-[405px] md:ml-auto md:max-h-[850px] md:max-w-[500px]"
-              quality={100}
-            />
+            <div className="ml-auto flex w-[290px] items-end md:w-[490px]">
+              <Image
+                src={photo}
+                alt="Rodrigo's photo"
+                width="590"
+                height="940"
+                className="h-full w-full md:h-[940px]"
+                quality={100}
+              />
+            </div>
           </div>
         </Card>
       </div>
