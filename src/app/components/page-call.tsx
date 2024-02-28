@@ -15,7 +15,7 @@ export function Call() {
             significativa
           </p>
 
-          <div className="mx-auto mt-auto flex w-[600px] justify-center">
+          <div className="mx-auto mt-auto flex justify-center md:w-[600px]">
             <ContactButton />
           </div>
         </div>
