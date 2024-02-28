@@ -1,6 +1,5 @@
 import { Logo } from '@/assets/logo'
 import { Sidebar } from './sidebar'
-import Image from 'next/image'
 import { HeaderAnchorLink } from './header-anchor-link'
 
 export function Header() {
