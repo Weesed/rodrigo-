@@ -12,6 +12,7 @@ export function Header() {
           <HeaderAnchorLink href="#about" text="Sobre mim" />
           <HeaderAnchorLink href="#depoimentos" text="Depoimentos" />
           <HeaderAnchorLink href="#palestras" text="Palestras" />
+          <HeaderAnchorLink href="#clinic" text="Espaço" />
           <HeaderAnchorLink href="#faq" text="Perguntas frequentes" />
           <HeaderAnchorLink href="#footer" text="Contato" />
         </div>

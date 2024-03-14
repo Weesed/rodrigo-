@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import {
   AlignJustify,
   HeartHandshake,
+  Home,
   MessageSquareText,
   Sticker,
   User,
@@ -46,6 +47,11 @@ export function Sidebar() {
           <SidebarLink href="#palestras" onClick={handleCloseSheet}>
             <Lectures className="size-5 text-primary/70" />
             <span>Palestras</span>
+          </SidebarLink>
+
+          <SidebarLink href="#clinic" onClick={handleCloseSheet}>
+            <Home className="size-5 text-primary/70" />
+            <span>Espaço</span>
           </SidebarLink>
 
           <SidebarLink href="#faq" onClick={handleCloseSheet}>

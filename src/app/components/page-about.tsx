@@ -26,7 +26,7 @@ export function About() {
                 e sou{' '}
                 <span className="font-semibold text-blue-text">
                   {' '}
-                  psicanalista e terapeuta há mais de 5 anos
+                  psicanalista e terapeuta
                 </span>
                 . Meu trabalho é criar um espaço seguro para você explorar suas
                 emoções e encontrar soluções para seus problemas. <br />
