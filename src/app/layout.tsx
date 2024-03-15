@@ -34,7 +34,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster richColors />
-        <GoogleTagManager gtmId="GTM-TKK7MJQW" />
+        <GoogleTagManager gtmId="GTM-N6PQSLW9" />
       </body>
     </html>
   )
