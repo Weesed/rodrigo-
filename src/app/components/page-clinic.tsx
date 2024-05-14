@@ -5,14 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import img2 from '@/assets/escritorio-2.jpeg'
-import img3 from '@/assets/escritorio-3.jpeg'
-import img4 from '@/assets/escritorio-4.jpeg'
 import Image from 'next/image'
 
-const images = [img2, img3, img4]
+interface PageClinicProps {
+  nossoEspaco: {
+    url: string
+  }[]
+}
 
-export function Clinic() {
+export function Clinic({ nossoEspaco }: PageClinicProps) {
   return (
     <div id="clinic" className="container mt-40 px-5 md:px-0">
       <Title>Nosso espaço</Title>
@@ -25,11 +26,11 @@ export function Clinic() {
           modules={[Pagination]}
           loop={true}
         >
-          {images.map((img, i) => (
+          {nossoEspaco.map((image, i) => (
             <SwiperSlide key={i} className="w-full cursor-pointer select-none">
               <div className="">
                 <Image
-                  src={img.src}
+                  src={image.url}
                   width="1280"
                   height="480"
                   alt="Rodrigo's photo"

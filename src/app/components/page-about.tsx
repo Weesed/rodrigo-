@@ -9,10 +9,15 @@ import exp3 from '@/assets/exp-3.png'
 import exp4 from '@/assets/exp-4.png'
 import certificate from '@/assets/certificate.jpeg'
 
-export function About() {
+interface PageAboutProps {
+  body: string
+  title: string
+}
+
+export function About({ title }: PageAboutProps) {
   return (
     <div id="about" className="mx-5 mt-40 md:mx-0">
-      <Title>Sobre mim</Title>
+      <Title>{title}</Title>
       <div className="mt-[30px]">
         <Card padding={0}>
           <div className="flex flex-col gap-10 md:flex-row md:gap-2">
