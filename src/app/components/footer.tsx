@@ -49,7 +49,7 @@ export function Footer() {
     if (submitType === 'whatsapp') {
       const message = `Ola Rodrigo! Tenho interesse em iniciar a psicanálise! Meu nome é ${data.name}, contato: ${data.contact}! Mensagem: ${data.message}`
       router.push(
-        `https://api.whatsapp.com/send/?phone=5513997677528&text=${message}`,
+        `https://api.whatsapp.com/send/?phone=5513996794393&text=${message}`,
       )
     } else {
       const templateParams = {
